@@ -1,6 +1,6 @@
-import "./index.sass";
 import React from "react";
 import { render } from "react-dom";
+import "./global";
 import App from "./App.js";
 
 render(<App />, document.getElementById("root"));

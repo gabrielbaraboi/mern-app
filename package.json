@@ -1,0 +1,17 @@
+{
+  "name": "mern-app",
+  "version": "0.0.1",
+  "description": "mern-app",
+  "lockfileVersion": 2,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielbaraboi/mern-app.git"
+  },
+  "keywords": ["mern-app", "mern", "node", "react", "mongodb"],
+  "author": "Gabriel Baraboi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielbaraboi/mern-app/issues"
+  },
+  "homepage": "https://github.com/gabrielbaraboi/mern-app#readme"
+}

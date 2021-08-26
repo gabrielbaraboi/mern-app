@@ -1,7 +1,8 @@
 import React from "react";
+import styles from "./app.module";
 
 const App = () => {
-	return <div>React is Working!</div>;
+	return <div className={styles.title}>React is Working!</div>;
 };
 
 export default App;

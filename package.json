@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/gabrielbaraboi/mern-app.git"
   },
-  "keywords": ["mern-app", "mern", "node", "react", "mongodb"],
+  "keywords": ["mern-app", "mern", "node", "react", "mongodb", "webpack"],
   "author": "Gabriel Baraboi",
   "license": "MIT",
   "bugs": {

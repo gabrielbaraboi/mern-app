@@ -2,6 +2,7 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const Dotenv = require("dotenv-webpack");
 
 let isDevelopment = process.env.NODE_ENV !== "production";
 
@@ -15,7 +16,7 @@ module.exports = {
 		filename: "[name].[fullhash].js",
 	},
 	devServer: {
-		port: 3000,
+		port: process.env.APP_PORT || 3000,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -27,6 +28,7 @@ module.exports = {
 			chunkFilename: isDevelopment ? "[id].css" : "[id].[fullhash].css",
 		}),
 		new CleanWebpackPlugin(),
+		new Dotenv(),
 	],
 	module: {
 		rules: [

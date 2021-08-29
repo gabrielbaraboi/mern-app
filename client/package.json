@@ -3,8 +3,8 @@
 	"private": true,
 	"proxy": "http://localhost:9000",
 	"scripts": {
-		"start": "webpack-dev-server --mode development --open",
-		"build": "webpack --mode production"
+		"start": "env-cmd -f .env webpack-dev-server --open",
+		"build": "env-cmd -f .env webpack"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.15.0",
@@ -13,6 +13,7 @@
 		"babel-loader": "^8.2.2",
 		"clean-webpack-plugin": "^4.0.0-alpha.0",
 		"css-loader": "^6.2.0",
+		"dotenv-webpack": "^7.0.3",
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.3.2",
 		"mini-css-extract-plugin": "^2.2.0",

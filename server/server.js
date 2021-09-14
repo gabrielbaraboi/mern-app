@@ -1,17 +1,16 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const bodyParser = require("body-parser");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const port = process.env.PORT || 9000;
+const { port, app_url, api_url } = require('./config');
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: app_url,
 		credentials: true,
 	})
 );

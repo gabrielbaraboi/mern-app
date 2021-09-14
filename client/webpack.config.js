@@ -95,3 +95,5 @@ module.exports = {
 		extensions: [".js", ".sass", ".scss"],
 	},
 };
+
+console.log(`Environment: ${process.env.BASE_URL}`);
